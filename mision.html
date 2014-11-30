@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Misión</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+     <?php
+            include './verificaSesion.php';
+            $v = verificar();
+            if ($v==0) return;
+           
+            
+            
+        ?>
+    <body>
+        <form id="frmmision">
+        <img src="images/mision.jpg" alt="Misión" id="imgmision">
+        <b>MISIÓN</b>
+        <br>
+        <br>
+            Brindar una educación académica con énfasis ambiental orientada por personal 
+            idóneo, fortaleciendo la práctica de valores, aptitudes y acciones en beneficio propio, 
+            de la comunidad y la naturaleza.
+        </form>
+    </body>
+</html>

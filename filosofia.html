@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Filosofía Institucional</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+     <?php
+            include './verificaSesion.php';
+            $v = verificar();
+            if ($v==0) return;
+           
+            
+            
+        ?>
+    <body>
+        <form id="frmfilosofia">
+        <img src="images/filosofia.jpg" alt="Filosofía" id="imgfilosofia">
+        <b>FILOSOFÍA INSTITUCIONAL</b>
+        <br>
+        <br>
+            La Institución Educativa  Jesús de Praga  se proyecta  a la formación  
+            integral de  jóvenes  líderes fortalecida  en la practica  de valores,   
+            el  amor  por su comunidad  y la naturaleza.
+        </form>
+    </body>
+</html>

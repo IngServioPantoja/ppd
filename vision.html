@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Visión</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+     <?php
+            include './verificaSesion.php';
+            $v = verificar();
+            if ($v==0) return;
+  
+        ?>
+    <body>
+        <form id="frmvision">
+        <img src="images/vision.JPG" alt="Visión" id="imgvision">
+        <b>VISIÓN</b>
+        <br>
+        <br>
+            La institución educativa Jesús de Praga se consolida a nivel regional como 
+            formadora de líderes comprometidos con la sociedad y la naturaleza mediante una 
+            educación académica y ambiental.
+        </form>
+    </body>
+</html>

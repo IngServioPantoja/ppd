@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Objetivos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+     <?php
+            include './verificaSesion.php';
+            $v = verificar();
+            if ($v==0) return;
+           
+            
+            
+        ?>
+    <body>
+        <form id="frmobjetivos">
+        <img src="images/objetivos.JPG" alt="Objetivos" id="imgobjetivos">
+        <b>OBJETIVOS</b>
+        <br>
+        <br>
+                <b> 1. OBJETIVOS GENERALES: </b> 
+                <br>
+                Propender  por una formación  integral y de calidad.
+                <br>
+                Brindar  espacios de participación  comunitaria con el fin de mejorar la    convivencia  y  el desarrollo regional.
+                <br>
+                Conservar  y  aprovechar  los recursos  que brinda  la naturaleza de la región y el medio ambiente en general.
+                <br>
+                <br>
+                <b> 2. OBJETIVOS ESPECIFICOS: </b>
+                <br>
+                Vincular entidades gubernamentales y no gubernamentales cuya misión sea el desarrollo del sector campesino y la protección de los recursos naturales.
+                <br>
+                Crear conciencia sobre la crisis ambiental y organizar un plan de estudios para enfrentarla, desde la óptica de la educación.
+                <br>
+                Integrar los diferentes entes de la comunidad educativa con el fin de plantear alternativas para la solución de la  diversa problemática detectada.
+                <br>
+                Brindar espacios a la comunidad para la educación formal e informal para el aprovechamiento del tiempo libre.
+                <br>
+                Ejercer una administración basada en la concertación y el diálogo.
+        </form>
+    </body>
+</html>

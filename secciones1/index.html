@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset='utf-8'>
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/miestilo.css">
+   <script src="js/jquery-2.1.1.js"></script>
+   <script src="js/micodigo.js"></script>
+   <title>Manejo de secciones</title>
+</head>
+<body>
+    
+    <h1>Institucion Educativa Jesus de Praga</h1><img src="imagenes/escudo.jpg" alt="Jesus de Pragaga">
+    <h2>Sistema de inventario</h2>
+    <p>Sede - sandona</p>
+    
+<header id='cssmenu'>
+<ul>
+    <li class='active'><a href='#' id="menuI"><span>Inicio</span></a></li>
+    <li><a href='#' id="menuD"><span>Crear cuenta</span></a></li>
+    <li><a href='#' id="menuE" ><span>Registrar implementos</span></a></li>
+    <li><a href='#' id="menuC"><span>Acceder prestamo</span></a></li>
+    <li><a href='#' id="menuF"><span>Devolucion prestamo</span></a></li>
+    <li><a href='#' id="menuG" ><span>Consultar</span></a></li>
+    <li class='last'><a href='#' id="menuK"><span>Contactos</span></a></li>
+</ul>
+</header>
+    
+    <section id="sec1">
+        <h2>Inicio - Generalidades del programa</h2>
+        <p>Este programa fue construido con el fin de facilitar el manejo del inventario del colegio Jesus de praga
+            
+        <br></p>
+        <hr>
+    </section>
+    
+    <section  id="sec2">
+        <h2>Crear cuenta usuario</h2>
+        <form id="frm1">
+            <label>Nombre</label><br>
+            <input type="text" name="t1" required id="t1"><br>
+            <br>
+            <label>cedula</label><br>
+            <input type="text" name="t3" required id="t3"><br>
+            <br>
+            <label>codigo usuario</label><br>
+            <input type="text" name="t2" required id="t2"><br>
+            <br>
+            <label>Telefono</label><br>
+            <input type="text" name="tel" required id="t4"><br>
+            <br>
+            <label>Ocupacion</label>
+                <select name="lstpro" id="lstocu">
+                    <option value="Estudiante">Estudiante</option>
+                    <option value="Docente">Docente</option>
+                    <option value="padre de Familia">Padre de familia</option>
+                    
+                </select>
+            <br>
+            
+            <br>
+            <hr>
+            <input type="button" value="GUARDAR" id="guardar">
+            <input type="reset" value="Limpiar">
+            <hr>
+            <table>
+        <caption> Cuenta Creada </caption>
+        <tr>
+            <th> Nombre </th>
+            <th> Cedula </th>
+            <th> Codigo Usuario </th>
+            <th> Telefono </th> 
+            <th> Ocupacion </th> 
+        </tr> 
+        <tbody id= "divres"> </tbody> 
+        </table>
+        </form>
+    </section>
+    
+    <section  id="sec3">
+        <h2>Registrar Implemento</h2>
+        <form id="frm1">
+            <label>Implemento</label>
+                <select name="lstpro" id="lstimple">
+                    <option>Balon futbol</option>
+                    <option>Balon Basketball</option>
+                    <option>Tambor</option>
+                    <option>Trompeta</option>
+                    <option>Baquetas</option>
+                </select>
+            <br>
+            <br>
+            <br>
+            <label>Cantidad</label><br>
+            <input type="text" name="t1" required><br>
+            <br>
+            <label>tipo de articulo</label><br>
+            <input type="text" name="t2" ><br>
+            <br>
+            <label>Estado</label><br>
+            <input type="text" name="t2" ><br>
+            <br>
+            <label>Observaciones</label><br>
+            <input type="text" name="t2" ><br>
+            <br>
+            <hr>
+            <input type="submit" value="GUARDAR">
+        </form>
+    </section>
+    <section  id="sec4">
+        <h2>Acceder a Prestamo</h2>
+        <form id="frm1">
+            <label>Codigo Usuario</label><br>
+            <input type="text" name="cod" id="cod" ><br>
+           
+            <input type="button" value="Consultar" id="consultar">
+            <br>
+            <br>
+            <hr>
+            <section  id="sec41">
+                <label>Implemento</label><br>
+                <br>
+            <input type="checkbox" name="option1" value="i1"> Balon tutbol<br>
+            <input type="checkbox" name="option1" value="i2"> Balon Basketboll<br>
+            <input type="checkbox" name="option1" value="i3"> Tambor<br>
+            <input type="checkbox" name="option1" value="i4"> Trompeta<br>
+            <input type="checkbox" name="option2" value="i5"> Baquetas<br>
+            <br>
+            <br>
+            <label>Cantidad</label><br>
+            <input type="text" name="t1" required><br>
+            <br>
+            <label>Fecha Prestamo</label><br>
+            <input type="date" name="fecpre" ><br>
+            <br>
+            <hr>
+            <input type="submit" value="GUARDAR">
+            
+            </section>
+        </form>
+    </section>
+    <section  id="sec5">
+        <h2>Devolucion Prestamo</h2>
+        <form id="frm1">
+            <label>Codigo Usuario</label><br>
+            <input type="text" name="cod" id="cod"><br>
+            <label>Fecha Devolucion</label><br>
+            <input type="date" name="fecpre" ><br>
+            <br>
+            <input type="button" value="Consultar" id="consultars">
+            <br>
+            <input type="button" value="Multa" id="multa">
+            <br>
+            <hr>
+            <input type="submit" value="GUARDAR" id="devo">
+        </form>
+    </section>
+     <section  id="sec6">
+        <h2>Consultar</h2>
+        <form id="frm1">
+            
+            <input type="button" value="LISTAR CLIENTES">
+            <br>
+            <input type="button" value="LISTAR OBJETOS">
+            <hr>
+        </form>
+    </section>
+    
+
+</body>
+</html>
